@@ -51,8 +51,10 @@ class Program : Operaçoes
     {
         Operaçoes ope = new Operaçoes();
         int escolha = 1;
+        Console.Clear();
         while (escolha != 0)
         {
+
             Console.WriteLine("Programa para calcular.");
             System.Console.WriteLine("escollha 1 : Soma");
             System.Console.WriteLine("escollha 2 : Multiplicação");
@@ -81,7 +83,7 @@ class Program : Operaçoes
                     linha = Console.ReadLine();
                     b = double.Parse(linha);
 
-                    Console.WriteLine(ope.Soma(a, b));
+                    Console.WriteLine($"O Resultado é {ope.Soma(a, b)}");
                     break;
 
                 case 2:
@@ -94,7 +96,7 @@ class Program : Operaçoes
                     linha = Console.ReadLine();
                     b = double.Parse(linha);
 
-                    Console.WriteLine(ope.Mul(a, b));
+                    Console.WriteLine($"O Resultado é {ope.Mul(a, b)}");
                     break;
 
                 case 3:
@@ -107,7 +109,7 @@ class Program : Operaçoes
                     linha = Console.ReadLine();
                     b = double.Parse(linha);
 
-                    Console.WriteLine(ope.Sub(a, b));
+                    Console.WriteLine($"O Resultado é {ope.Sub(a, b)}");
                     break;
 
                 case 4:
@@ -120,7 +122,7 @@ class Program : Operaçoes
                     linha = Console.ReadLine();
                     b = double.Parse(linha);
 
-                    Console.WriteLine(ope.Div(a, b));
+                    Console.WriteLine($"O Resultado é {ope.Div(a, b)}");
                     break;
                 default:
                     System.Console.WriteLine("nao foi identificado a oprçao:");
